@@ -28,7 +28,6 @@ fs.readdir("./commands/", (err, files) => {
         //console.log(commandName)
         console.log(`Attempting to load command ${commandName}`);
         client.commands.set(commandName, props);
-        console.log(client.commands);
     });
 });
 
