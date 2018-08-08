@@ -1,3 +1,11 @@
 exports.run = async (client, message, args) => {
-    message.channel.send("The first arg is " + args[0] + "!");
+    switch (args[0]) {
+      case 'send': {
+        message.channel.send('yeet!');
+        break;
+      }
+      case 'dm': {
+        message.author.send('boi!');
+      }
+    }
 };
